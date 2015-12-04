@@ -1,7 +1,6 @@
 # Universal (isomorphic) boilerplate written in ES2015 for Node and the browser.
 
 [![Travis Status][trav_img]][trav_site]
-[![Coverage Status](https://coveralls.io/repos/Kflash/gulps/badge.svg?branch=master&service=github)](https://coveralls.io/github/Kflash/gulps?branch=master)
 [![devDependency Status](https://david-dm.org/kflash/gulps/dev-status.svg)](https://david-dm.org/kflash/gulps#info=devDependencies)
 [![Dependency Status](https://david-dm.org/kflash/gulps.svg)](https://david-dm.org/kflash/gulps)
 
