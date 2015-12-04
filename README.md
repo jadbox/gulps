@@ -18,8 +18,10 @@ Node `^5.0.0`.
 * [ES6 with Babel](http://babeljs.io/) for ES6 and ES7
 * [Webpack](https://webpack.github.io/) for bundling
 * [Eslint](http://eslint.org/) to maintain a consistent code style
-* [Universal Module Definition (UMD) API](https://github.com/umdjs/umd), which provides compatibility with the most popular script loaders, to the output.
 * [Gulp](https://github.com/gulpjs/gulp) as build system
+* [Universal Module Definition (UMD) API](https://github.com/umdjs/umd), which provides compatibility with the most popular script loaders, to the output.
+* Error message system
+* Notifications
 * Unit tests written with ES2015 get transpiled on the fly
 * Livereload
 
