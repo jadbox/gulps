@@ -1,10 +1,10 @@
-# Gulps
+# Gulpi
 
 # Universal (isomorphic) boilerplate written in ES2015 for Node and the browser.
 
 [![Travis Status][trav_img]][trav_site]
-[![devDependency Status](https://david-dm.org/kflash/gulps/dev-status.svg)](https://david-dm.org/kflash/gulps#info=devDependencies)
-[![Dependency Status](https://david-dm.org/kflash/gulps.svg)](https://david-dm.org/kflash/gulps)
+[![devDependency Status](https://david-dm.org/kflash/gulpi/dev-status.svg)](https://david-dm.org/kflash/gulpi#info=devDependencies)
+[![Dependency Status](https://david-dm.org/kflash/gulpi.svg)](https://david-dm.org/kflash/gulpi)
 
 > A starter kit to get you up and running with a bunch of awesome new front-end technologies using Gulp, Babel, Webpack, Mocha, Sinon-chai, Isparta, and ESLint without any framework dependencies.
 
@@ -94,7 +94,5 @@ This transpiler works best in IE9+, but you can support IE8 by limiting yourself
 ## License
 MIT © [KFlash](https://github.com/kflash)
 
-[trav_img]: https://api.travis-ci.org/Kflash/gulps.svg
-[trav_site]: https://travis-ci.org/Kflash/gulps.svg?branch=master
-=======
-# gulps
+[trav_img]: https://api.travis-ci.org/Kflash/gulpi.svg
+[trav_site]: https://travis-ci.org/Kflash/gulpi.svg?branch=master
