@@ -1,6 +1,6 @@
 # Gulps
 
-# An Universal (isomorphic) boilerplate with common frontend tasks using gulp as build system.
+## An Universal (isomorphic) boilerplate with common frontend tasks using gulp as build system.
 
 [![Travis Status][trav_img]][trav_site]
 [![devDependency Status](https://david-dm.org/kflash/gulps/dev-status.svg)](https://david-dm.org/kflash/gulps#info=devDependencies)
