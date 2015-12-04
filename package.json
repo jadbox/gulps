@@ -1,11 +1,11 @@
 {
   "name": "gulps",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "",
   "main": "dist/gulps.js",
   "scripts": {
     "test": "gulp",
-    "test-browser": "gulp test-browser",
+    "browser": "gulp browser",
     "build": "gulp build",
     "prod": "gulp prod",
     "coverage": "gulp coverage",
