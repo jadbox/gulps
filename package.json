@@ -81,13 +81,13 @@
     "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^1.1.0",
     "gulp-mocha": "^2.2.0",
-    "gulp-notify": "^2.1.0",
+    "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.7",
-    "gulp-gzip": "^0.0.8",
+    "gulp-gzip": "^1.2.0",
     "gulp-task-listing": "^1.0.1",
     "isparta": "^4.0.0",
     "json-loader": "^0.5.4",
@@ -102,9 +102,9 @@
   "dependencies": {
     "rimraf": "^2.4.4",
     "webpack-notifier": "1.2.1",
-    "babel-core": "^6.2.4",
+    "babel-core": "^6.3.2",
     "babel-plugin-syntax-jsx": "^6.2.4",
     "pre-commit": "^1.1.2",
-	"npm-check-updates": "^2.5.1"
+	"npm-check-updates": "^2.5.2"
   }
 }

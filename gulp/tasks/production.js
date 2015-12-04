@@ -8,7 +8,6 @@ import webpackStream from 'webpack-stream';
 import webpack from 'webpack';
 import config from '../config';
 
-
 gulp.task('prod', () => {
 
     process.env.NODE_ENV = 'production';

@@ -57,7 +57,6 @@ $ npm webpack                   # Build a non-minified version of the library
 
 * `gulp dev` - Build task that generate compiled script
 * `gulp prod` - Build task that generate a minified script for production
-* `gulp build` - Build task that runs both `gulp dev` and `gulp prod`
 * `gulp clean` - Remove the `dist` folder and it's files
 * `gulp lint:source` - Lint the source
 * `gulp lint:test` - Lint the unit tests
