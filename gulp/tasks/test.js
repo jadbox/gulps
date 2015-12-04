@@ -1,14 +1,7 @@
 import gulp from 'gulp';
-import mocha from 'gulp-mocha';
-import _mocha from '../util/_mocha';
+import _mocha from '../util/_mocha'; // shared between coverage and this file
+import runSequence from 'run-sequence';
 
-function _registerBabel() {
-    require('babel-core/register');
-}
-
-function test() {
-    _registerBabel();
+gulp.task('test', ['lint:test'], function() {
     return _mocha();
-}
-
-gulp.task('test', test);
+});

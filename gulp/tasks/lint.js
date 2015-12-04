@@ -20,7 +20,7 @@ function lintSrc() {
 }
 
 function lintTest() {
-    return lint('test/**/*.js');
+    return lint('test/unit/**/*.js');
 }
 
 function lintGulpfile() {
