@@ -7,12 +7,13 @@ import webpackStream from 'webpack-stream';
 import WebpackNotifierPlugin from 'webpack-notifier';
 import handleErrors from '../util/handleErrors';
 import header from '../header';
+import config from '../config';
 
-function devTask(cb) {
+gulp.task('dev', ['test', 'lint:source'], () => {
 
     process.env.NODE_ENV = 'development';
 
-    return gulp.src(path.join('src/gulps.js'))
+    return gulp.src(config.sourceDir + config.outputName)
         .pipe(plumber())
         .on('error', handleErrors)
         .pipe(webpackStream({
@@ -29,13 +30,11 @@ function devTask(cb) {
                 }]
             },
             plugins: [new webpack.BannerPlugin(header), new WebpackNotifierPlugin({
-                title: 'Gulps',
+                title: config.notifyTitle,
                 alwaysNotify: true
             })],
             devtool: 'source-map'
         }))
-        .pipe(gulp.dest(path.dirname('dist/gulps.js')))
+        .pipe(gulp.dest(path.dirname(config.distDir + config.outputName)))
         .pipe(filter(['*', '!**/*.js.map']))
-}
-
-gulp.task('dev', devTask);
+});

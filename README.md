@@ -64,6 +64,7 @@ $ npm webpack                   # Build a non-minified version of the library
 * `gulp watch` - Run all unit tests & watch files for changes
 * `gulp coverage` - Generates a coverage report
 * `gulp browser` - Let you run unit tests in your browser.
+* `gulp gzip` - Gzip the compiled script
 * `gulp help` - Lists all available gulp tasks from your gulpfile.
 
 ## Unit tests

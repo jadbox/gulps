@@ -34,4 +34,4 @@ gulp.task('lint:source', lintSrc);
 gulp.task('lint:test', lintTest);
 
 // Lint everything
-gulp.task('lint', ['lint:src', 'lint:test']);
+gulp.task('lint', ['lint:source', 'lint:test']);

@@ -6,12 +6,13 @@ import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
 import webpackStream from 'webpack-stream';
 import webpack from 'webpack';
+import config from '../config';
 
 function prodTask(cb) {
     
 	process.env.NODE_ENV = 'production';
 
-    return gulp.src(path.join('src/gulps.js'))
+    return gulp.src(config.sourceDir + config.outputName)
         .pipe(plumber())
 
     .pipe(webpackStream({
@@ -38,7 +39,7 @@ function prodTask(cb) {
                 new webpack.NoErrorsPlugin()
             ]
         }))
-        .pipe(rename(path.basename('dist/gulps.js', path.extname('dist/gulps.js')) + '.min.js'))
+        .pipe(rename(path.basename(config.sourceDir + config.outputName, path.extname(config.sourceDir + config.outputName)) + '.min.js'))
         .pipe(uglify({
             output: {
                 comments: false
@@ -50,7 +51,7 @@ function prodTask(cb) {
                 screw_ie8: true
             }
         }))
-        .pipe(gulp.dest(path.dirname('dist/gulps.min.js')));
+        .pipe(gulp.dest(config.sourceDir + config.minified));
 }
 
 gulp.task('prod', prodTask);
