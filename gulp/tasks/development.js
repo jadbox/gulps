@@ -18,9 +18,9 @@ gulp.task('dev', ['test', 'lint:source'], () => {
         .on('error', handleErrors)
         .pipe(webpackStream({
             output: {
-                filename: config.outputName,
+                filename: 'gulps.js',
                 libraryTarget: 'umd',
-                library: config.libraryName
+                library: 'gulps'
             },
             module: {
                 loaders: [{

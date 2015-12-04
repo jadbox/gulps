@@ -4,11 +4,11 @@ import handleErrors from './handleErrors';
 import config from '../config';
 
 export default () => {
-    return gulp.src([config.testDir + 'setup/node.js',  config.specDir + '**/*.js'], {
+    return gulp.src(['test/setup/node.js', 'test/unit/**/*.js'], {
             read: false
         })
         .pipe(mocha({
-            reporter: config.mocha.reporter,
+            reporter: 'spec',
             globals: config.mochaGlobals,
             ignoreLeaks: false
         }))

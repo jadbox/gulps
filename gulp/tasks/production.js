@@ -22,9 +22,9 @@ gulp.task('prod', () => {
             hot: false,
             build: true,
             output: {
-                filename: config.minified,
+                filename: 'gulps.min.js',
                 libraryTarget: 'umd',
-                library: config.libraryName
+                library: 'gulps'
             },
             module: {
                 loaders: [{

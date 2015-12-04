@@ -69,7 +69,7 @@ $ npm webpack                   # Build a non-minified version of the library
 
 ## Unit tests
 
-This project uses Mocha to run your unit tests. By default all units tests runs on the server side, but you can use the global browser variable - 'global.browser' - to run tests for either server or the browser. 
+This project uses Mocha to run your unit tests. By default all units tests runs on the server side. 
 
 To add a unit test, simply create `.js` file inside the `~/test/specs` folder, and Mocha and Chai will be available within your unit tests without the need to import them.
 
