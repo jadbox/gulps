@@ -1,5 +1,3 @@
-# Gulps
-
 # Universal (isomorphic) boilerplate written in ES2015 for Node and the browser.
 
 [![Travis Status][trav_img]][trav_site]
