@@ -51,5 +51,5 @@ gulp.task('prod', () => {
                 screw_ie8: true
             }
         }))
-        .pipe(gulp.dest(config.sourceDir + config.minified));
+       .pipe(gulp.dest(path.dirname(config.distDir + config.minified)))
 });
