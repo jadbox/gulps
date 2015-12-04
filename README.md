@@ -36,7 +36,7 @@ As a workaround, replace `export default { … }` with  `module.exports = { … 
 Just clone the repo and install the necessary node modules:
 
 ```js
-$ git clone https://github.com/kflash/gulpi.git trolly
+$ git clone https://github.com/kflash/gulpi.git gulps
 $ cd gulpi
 $ npm install                   # Install Node modules listed in ./package.json
 $ npm webpack                   # Build a non-minified version of the library
@@ -53,6 +53,13 @@ $ npm webpack                   # Build a non-minified version of the library
 * `gulp watch` - Run all unit tests & watch files for changes
 * `gulp coverage` - Generates a coverage report
 * `gulp browser` - Let you run unit tests in your browser.
+* `npm run packages` - List installed packages
+* `npm run package:purge` - Remove all dependencies
+* `npm run package:reinstall` - Reinstall all dependencies
+* `npm run package:check` - shows a list over dependencies with a higher version number then the current one - if any 
+* `npm run package:upgrade` - Automaticly upgrade all devDependencies & dependencies, and update package.json
+* `npm run package:dev` - Automaticly upgrade all devDependencies and update package.json
+* `npm run package:prod` - Automaticly upgrade all dependencies and update package.json
 
 ## Unit tests
 
@@ -73,6 +80,22 @@ This library is set up to integrate with Isparta, and will automaticly publish y
 ## Linting
 
 This boilerplate project uses ESLint and the [Airbnb styleguide](https://github.com/airbnb/javascript#ecmascript-6-styles) to lint your source. To change the rules, edit the .eslintrc file in the root directory, respectively.
+
+## Package management
+
+Gulps has build-in some nice features to always make sure your dependency tree are up to date. 
+
+To check for the latest dependencies, simply run `npm run package:check`. 
+
+If you want to update your packages, you can simply do `npm run package:upgrade`.
+
+*Note!* Your `package.json` will be automatically updated so make sure you have saved your changes before running this.
+
+To reinstall all packages, do `npm run package:reinstall`, and to remove all packages  `npm run package:purge`.
+
+## Pre-commit
+
+This boilerplate uses a [pre-commit hook](https://www.npmjs.com/package/pre-commit) to ensure that your npm test (or other specified scripts) passes before you can commit your changes. This all conveniently configured in your package.json.
 
 ## Installation
 
