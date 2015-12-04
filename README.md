@@ -64,20 +64,22 @@ $ npm webpack                   # Build a non-minified version of the library
 * `gulp watch` - Run all unit tests & watch files for changes
 * `gulp coverage` - Generates a coverage report
 * `gulp browser` - Let you run unit tests in your browser.
- `gulp gzip` - Gzip the compiled script
+* `gulp gzip` - Gzip the compiled script
 * `gulp help` - Lists all available gulp tasks from your gulpfile.
 
 ## Unit tests
 
-This project uses Mocha to run your unit tests.
+This project uses Mocha to run your unit tests. By default all units tests runs on the server side, but you can use the global browser variable - 'global.browser' - to run tests for either server or the browser. 
 
-To add a unit test, simply create `.js` file inside the `~/test` folder, and Mocha and Chai will be available within your unit tests without the need to import them.
+To add a unit test, simply create `.js` file inside the `~/test/specs` folder, and Mocha and Chai will be available within your unit tests without the need to import them.
 
 To run the tests in the project, just simply `gulp test`.
 
 To keep watching the common test suites that you are working on, simply do `gulp watch`.
 
-To see your unit tests in the browser, do `gulp browser`, and open the `~/test/spec_runner.html` in your browser.
+## Browser tests
+
+To run your unit tests in the browser, do `gulp browser`, and then open the `~/test/runner.html` in your browser.
 
 ## Coveralls
 

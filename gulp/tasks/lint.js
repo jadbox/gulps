@@ -2,6 +2,7 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import eslint from 'gulp-eslint';
 import util from 'gulp-util';
+import config from '../config';
 
 // Lint a set of files
 function lint(files) {
@@ -16,11 +17,11 @@ function lint(files) {
 }
 
 function lintSrc() {
-    return lint('src/**/*.js');
+    return lint(config.sourceDir + '**/*.js');
 }
 
 function lintTest() {
-    return lint('test/unit/**/*.js');
+    return lint(config.specDir + '/**/*.js');
 }
 
 function lintGulpfile() {

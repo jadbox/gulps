@@ -1,8 +1,9 @@
 module.exports = function() {
     global.expect = global.chai.expect;
-
+	
     beforeEach(function() {
         this.sandbox = global.sinon.sandbox.create();
+        this.canUseDOM = !!global.window;
         global.stub = this.sandbox.stub.bind(this.sandbox);
         global.spy = this.sandbox.spy.bind(this.sandbox);
     });

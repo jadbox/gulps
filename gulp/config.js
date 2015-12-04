@@ -3,10 +3,15 @@ export default {
     sourceDir: './src/',
     distDir: './dist/',
     testDir: './test/',
+    specDir: './test/specs/',
     outputName: 'gulps.js',
-    minified: 'gulps.min.js',
+    libraryName: 'gulps',
+	minified: 'gulps.min.js',
     notifyTitle: 'gulps',
-    mochaGlobals: [
+    mocha: {
+		reporter: 'spec'
+	},
+	mochaGlobals: [
         'stub',
         'spy',
         'expect'
