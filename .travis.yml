@@ -26,5 +26,5 @@ branches:
 
 script: "gulp coverage"
 
-after_script:
-  - npm run coveralls
+after_success:
+  - gulp coveralls
