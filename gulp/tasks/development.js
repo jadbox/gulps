@@ -9,7 +9,7 @@ import handleErrors from '../util/handleErrors';
 import header from '../header';
 import config from '../config';
 
-gulp.task('dev', ['test', 'lint:source'], () => {
+gulp.task('dev', ['lint:source'], () => {
 
     process.env.NODE_ENV = 'development';
 

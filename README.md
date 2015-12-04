@@ -122,6 +122,10 @@ Yes, for small applications. For a larger project, you'll need to customize the 
 
 This transpiler works best in IE9+, but you can support IE8 by limiting yourself to a subset of ES2015 features.
 
+#### How to set environment variables?
+You can use Gulp for that. On the command line you can do `gulp --env='prod`. 
+In the gulp taks, you can use `gulp-utils`:  `.pipe(gutil.env.env === 'prod' ? minifySomething() : gutil.noop())`
+
 ## License
 MIT © [KFlash](https://github.com/kflash)
 
