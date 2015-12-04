@@ -98,7 +98,10 @@
     "sinon-chai": "^2.8.0",
     "vinyl-source-stream": "^1.1.0",
     "webpack": "^1.12.9",
-    "webpack-stream": "^2.3.0"
+    "webpack-stream": "^2.3.0",
+	"mocha-lcov-reporter": "^1.0.0",
+	"coveralls ": "^2.11.4"
+	
   },
   "dependencies": {
     "rimraf": "^2.4.4",
