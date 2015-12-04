@@ -8,9 +8,10 @@ import webpackStream from 'webpack-stream';
 import webpack from 'webpack';
 import config from '../config';
 
-function prodTask(cb) {
-    
-	process.env.NODE_ENV = 'production';
+
+gulp.task('prod', () => {
+
+    process.env.NODE_ENV = 'production';
 
     return gulp.src(config.sourceDir + config.outputName)
         .pipe(plumber())
@@ -52,6 +53,4 @@ function prodTask(cb) {
             }
         }))
         .pipe(gulp.dest(config.sourceDir + config.minified));
-}
-
-gulp.task('prod', prodTask);
+});
