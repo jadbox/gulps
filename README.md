@@ -18,10 +18,10 @@ Node `^5.0.0`.
 * [Eslint](http://eslint.org/) to maintain a consistent code style
 * [Gulp](https://github.com/gulpjs/gulp) as build system
 * [Universal Module Definition (UMD) API](https://github.com/umdjs/umd), which provides compatibility with the most popular script loaders, to the output.
+* [Livereload](http://livereload.com/) to monitor your changes and update your browser instantly 
 * Error message system
 * Notifications
 * Unit tests written with ES2015 get transpiled on the fly
-* Livereload
 * Browser tests in the browser
 * Node >= 5.x
 

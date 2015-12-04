@@ -8,7 +8,7 @@ import webpack from 'webpack';
 import webpackStream from 'webpack-stream';
 import config from '../config';
 
-gulp.task('browser', () => {
+gulp.task('browser', ['clean'], () => {
 
     const testFiles = glob.sync(config.specDir + '**/*.js');
     const allFiles = [config.testDir + 'setup/browser.js'].concat(testFiles);

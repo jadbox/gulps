@@ -1,6 +1,6 @@
 /*!
  * gulps
- * @version v0.0.6
+ * @version v0.0.11
  * @license MIT
  */
 (function webpackUniversalModuleDefinition(root, factory) {
