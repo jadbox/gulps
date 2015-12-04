@@ -22,7 +22,6 @@ Node `^5.0.0`.
 * Notifications
 * Unit tests written with ES2015 get transpiled on the fly
 * Livereload
-
 * Browser tests in the browser
 * Node >= 5.x
 
