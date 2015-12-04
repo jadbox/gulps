@@ -1,3 +1,9 @@
+/**
+ * Clean task
+ *
+ * Clean dist folder, gulp all caches and sass cache
+ */
+ 
 import path from 'path';
 import gulp from 'gulp';
 import del  from 'del';

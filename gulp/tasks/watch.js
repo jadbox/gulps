@@ -1,3 +1,9 @@
+/**
+ * Watch task
+ *
+ * Watch all changes in source folder and launch task accordingly
+ */
+ 
 import gulp from 'gulp';
 
 const watchFiles = ['src/**/*', 'test/**/*', 'package.json', '**/.eslintrc', '.jscsrc'];

@@ -53,6 +53,7 @@ $ npm webpack                   # Build a non-minified version of the library
 * `gulp watch` - Run all unit tests & watch files for changes
 * `gulp coverage` - Generates a coverage report
 * `gulp browser` - Let you run unit tests in your browser.
+* `gulp help` - Lists all available gulp tasks from your gulpfile.
 * `npm run packages` - List installed packages
 * `npm run package:purge` - Remove all dependencies
 * `npm run package:reinstall` - Reinstall all dependencies

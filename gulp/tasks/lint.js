@@ -33,8 +33,5 @@ gulp.task('lint:source', lintSrc);
 // Lint our test code
 gulp.task('lint:test', lintTest);
 
-// Lint this file
-gulp.task('lint-gulpfile', lintGulpfile);
-
 // Lint everything
-gulp.task('lint', ['lint-src', 'lint-test', 'lint-gulpfile']);
+gulp.task('lint', ['lint:src', 'lint:test']);
