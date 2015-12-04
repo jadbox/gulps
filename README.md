@@ -1,6 +1,6 @@
 # Gulps
 
-## An universal boilerplate with common frontend tasks using gulp as build system.
+## An universal boilerplate written in ES2015 for both server and browser.
 
 [![Travis Status][trav_img]][trav_site]
 [![devDependency Status](https://david-dm.org/kflash/gulps/dev-status.svg)](https://david-dm.org/kflash/gulps#info=devDependencies)
