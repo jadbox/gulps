@@ -1,9 +1,9 @@
 # Gulps
 
-# Universal (isomorphic) boilerplate written in ES2015 for Node and the browser.
+# An Universal (isomorphic) boilerplate with common frontend tasks using gulp as build system.
 
 [![Travis Status][trav_img]][trav_site]
-[![devDependency Status](https://david-dm.org/kflash/gulps/dev-status.svg)](https://david-dm.org/kflash/gulpi#info=devDependencies)
+[![devDependency Status](https://david-dm.org/kflash/gulps/dev-status.svg)](https://david-dm.org/kflash/gulps#info=devDependencies)
 [![Dependency Status](https://david-dm.org/kflash/gulps.svg)](https://david-dm.org/kflash/gulps)
 
 > A starter kit to get you up and running with a bunch of awesome new front-end technologies using Gulp, Babel, Webpack, Mocha, Sinon-chai, Isparta, and ESLint without any framework dependencies.
@@ -19,8 +19,10 @@ Node `^5.0.0`.
 * [Webpack](https://webpack.github.io/) for bundling
 * [Eslint](http://eslint.org/) to maintain a consistent code style
 * [Universal Module Definition (UMD) API](https://github.com/umdjs/umd), which provides compatibility with the most popular script loaders, to the output.
+* [Gulp](https://github.com/gulpjs/gulp) as build system
 * Unit tests written with ES2015 get transpiled on the fly
 * Livereload
+
 * Browser tests in the browser
 * Node >= 5.x
 
@@ -33,16 +35,26 @@ As a workaround, replace `export default { … }` with  `module.exports = { … 
 
 ## Getting Started
 
-Just clone the repo and install the necessary node modules:
+Just clone the repo and install the necessary node modules.
 
 ```js
-$ git clone https://github.com/kflash/gulpi.git gulps
-$ cd gulpi
+$ git clone https://github.com/kflash/gulps.git gulps
+$ cd gulps
 $ npm install                   # Install Node modules listed in ./package.json
 $ npm webpack                   # Build a non-minified version of the library
 ```
 
 ## Workflow
+
+* `npm run packages` - List installed packages
+* `npm run package:purge` - Remove all dependencies
+* `npm run package:reinstall` - Reinstall all dependencies
+* `npm run package:check` - shows a list over dependencies with a higher version number then the current one - if any 
+* `npm run package:upgrade` - Automaticly upgrade all devDependencies & dependencies, and update package.json
+* `npm run package:dev` - Automaticly upgrade all devDependencies and update package.json
+* `npm run package:prod` - Automaticly upgrade all dependencies and update package.json
+
+## Gulp tasks
 
 * `gulp dev` - Build task that generate compiled script
 * `gulp prod` - Build task that generate a minified script for production
@@ -54,13 +66,6 @@ $ npm webpack                   # Build a non-minified version of the library
 * `gulp coverage` - Generates a coverage report
 * `gulp browser` - Let you run unit tests in your browser.
 * `gulp help` - Lists all available gulp tasks from your gulpfile.
-* `npm run packages` - List installed packages
-* `npm run package:purge` - Remove all dependencies
-* `npm run package:reinstall` - Reinstall all dependencies
-* `npm run package:check` - shows a list over dependencies with a higher version number then the current one - if any 
-* `npm run package:upgrade` - Automaticly upgrade all devDependencies & dependencies, and update package.json
-* `npm run package:dev` - Automaticly upgrade all devDependencies and update package.json
-* `npm run package:prod` - Automaticly upgrade all dependencies and update package.json
 
 ## Unit tests
 
@@ -100,7 +105,7 @@ This boilerplate uses a [pre-commit hook](https://www.npmjs.com/package/pre-comm
 
 ## Installation
 
-Download the package, and run this from the command line:
+Each time you clone the repo, use:
 
 ```
 npm install 
