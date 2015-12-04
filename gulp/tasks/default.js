@@ -1,7 +1,5 @@
 import gulp from 'gulp';
 
-function defaultTask() {
+gulp.task('default', () => {
     return gulp.start('dev');
-}
-
-gulp.task('default', defaultTask);
+});

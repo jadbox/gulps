@@ -2,7 +2,7 @@ import config from '../config';
 import gulp   from 'gulp';
 import gzip   from 'gulp-gzip';
 
-gulp.task('gzip', function() {
+gulp.task('gzip', () => {
 
   return gulp.src(config.gzip.src)
     .pipe(gzip(config.gzip.options))

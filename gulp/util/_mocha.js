@@ -1,21 +1,16 @@
 import gulp from 'gulp';
 import mocha from 'gulp-mocha';
 import handleErrors from './handleErrors';
+import config from '../config';
 
-function _mocha() {
+export default () => {
     return gulp.src(['test/setup/node.js', 'test/unit/**/*.js'], {
             read: false
         })
         .pipe(mocha({
             reporter: 'spec',
-            globals: [
-                'stub',
-                'spy',
-                'expect'
-            ],
+            globals: config.mochaGlobals,
             ignoreLeaks: false
         }))
         .on('error', handleErrors);
-}
-
-export default _mocha;
+};

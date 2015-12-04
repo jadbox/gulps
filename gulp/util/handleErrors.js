@@ -6,7 +6,7 @@
 import notify from 'gulp-notify';
 import gutil from 'gulp-util';
 
-export default function(error) {
+export default (error) => {
 
     // Make a beep in the speaker
     gutil.beep();
