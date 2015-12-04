@@ -8,7 +8,7 @@
 
 ## Requirements
 
-Node `^>=4.1`.
+Node `>= 4.1`.
 
 ## Features
 
